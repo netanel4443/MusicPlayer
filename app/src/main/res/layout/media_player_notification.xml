@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/music_player_notification_parent"
+>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/notification_song_name"
+            android:layout_alignParentTop="true"
+            android:text="not playing"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/notification_prev_song_btn"
+                    android:background="@drawable/ic_previous_black_24"
+                    android:layout_toLeftOf="@id/notification_play_or_pause_btn_not"
+                    android:layout_marginRight="50dp"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/notification_play_or_pause_btn_not"
+                    android:src="@drawable/ic_play_circle_outline_24"
+                    android:layout_centerInParent="true"
+
+                    />
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/notification_next_song_btn"
+                    android:background="@drawable/ic_forward_black_24"
+                    android:layout_toRightOf="@+id/notification_play_or_pause_btn_not"
+                    android:layout_marginLeft="50dp"
+                    />
+        </RelativeLayout>
+
+
+</RelativeLayout>
